@@ -34,6 +34,8 @@ Prompt Engineering 是优化 prompts 以获得有效输出的艺术和科学
 
 解决问题：例如虚假信息的提供、过时信息的生成、非权威来源的依赖以及由于术语混淆导致的不准确响应
 
+个人看法：助力更好的回答问题，更实时、更专业
+
 ![alt text](https://luhengshiwo.github.io/LLMForEverybody/07-%E7%AC%AC%E4%B8%83%E7%AB%A0-Agent/assest/%E5%BC%80%E5%8F%91%E5%A4%A7%E6%A8%A1%E5%9E%8Bor%E4%BD%BF%E7%94%A8%E5%A4%A7%E6%A8%A1%E5%9E%8B/8.PNG)
 
 ## Agent
@@ -41,6 +43,12 @@ Prompt Engineering 是优化 prompts 以获得有效输出的艺术和科学
 Agent 指的是一个能够感知其环境并根据感知到的信息做出决策以实现特定目标的系统，通过大模型的加持，Agent比以往任何时候都要更加引人注目
 
 以 Langchain 为代表的 Agent 框架
+
+an agent is something that can act or make decisions on its own. It’s like a person or a robot that can take actions based on the information it receives
+
+In more technical terms, an agent here refers to a running large language model (LLM) model with its respective prompt. Each agent operates based on a prompt, which serves as its initial input or instruction. The prompt helps define the context, goals, and constraints for the agent's responses. It acts like a starting point or directive that guides the agent’s behavior and decision-making process.
+
+个人看法：AI助手，帮助实施一系列动作，有自己的思考和行动
 
 ## Fine-tuning
 
@@ -113,3 +121,41 @@ https://36kr.com/p/3113897985658368
 扣子是新一代大模型 AI 应用开发平台。无论你是否有编程基础，都可以快速搭建出各种 Bot，并一键发布到各大社交平台
 
 ![alt text](https://luhengshiwo.github.io/LLMForEverybody/07-%E7%AC%AC%E4%B8%83%E7%AB%A0-Agent/assest/langchain%E5%90%91%E5%B7%A6coze%E5%90%91%E5%8F%B3/3.webp)
+
+# AI Agents: Autonomy and Adaptability
+
+- https://www.digitalocean.com/community/conceptual-articles/rag-ai-agents-agentic-rag-comparative-analysis
+
+![alt text](https://doimages.nyc3.cdn.digitaloceanspaces.com/010AI-ML/2024/Shaoni/Adrien/Image_4.png)
+
+## How Model-Based Reflex Agents Work
+
+- https://www.digitalocean.com/community/conceptual-articles/rag-ai-agents-agentic-rag-comparative-analysis#how-model-based-reflex-agents-work
+
+- https://dev.to/tal7aouy/rag-vs-agents-a-comparison-and-when-to-use-each-gn
+
+For example, a robot vacuum cleaner represents a model-based reflex agent. It uses sensors to identify its position and detect obstacles while keeping an internal room map. This map helps the vacuum recall areas it has already cleaned and navigate obstacles more effectively. This way, the agent prevents unnecessary actions and enhances performance compared to a simple reflex system.
+
+example2:
+
+Let's say you have a personal assistant agent. You ask it to "Schedule a meeting with Sarah for tomorrow at 3 PM." The agent would:
+Check your calendar.
+Verify Sarah's availability.
+Schedule the meeting.
+Confirm it with you and Sarah.
+
+![alt text](https://doimages.nyc3.cdn.digitaloceanspaces.com/010AI-ML/2024/Shaoni/Adrien/Image_5.png)
+
+1. Input
+2. Processing: They analyze the input and determine a course of action, often involving multiple steps, context management, or interactions.
+3. Output
+
+## Agent types
+
+1. Standard Agent
+
+An Agent can bind a knowledge base you provided
+
+2. RAG Agent
+
+It will find related document based on the human message
